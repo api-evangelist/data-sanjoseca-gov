@@ -1,0 +1,43 @@
+edges:
+- partner_name: Open Mobility Foundation MDS agencies
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/agencies.csv
+  category: MDS agency registration
+  contract_reference:
+    register: Open Mobility Foundation MDS agencies
+    standard: Mobility Data Specification (MDS)
+    spec_file: null
+    role: mds-agency
+    registrations:
+    - registered_name: San Jose
+      agency_id: 801cb4b8-8725-449c-bdb9-7e9ac0e10b5b
+      agency_city: San Jose
+      agency_state: CA
+      agency_country: US
+      department_url: https://www.sanjoseca.gov/your-government/departments-offices/transportation/micro-mobility
+      requirement_url: null
+      matched_domain: sanjoseca.gov
+      matched_by: domain+local-verified
+      identity_note: City of San Jose open data portal on sanjoseca.gov, the same city government whose DOT department
+        is the MDS agency
+    signal_note: 'government side: the city is a registered MDS agency (consumer of providers'' MDS feeds); participation
+      only'
+    detected_by: sweep-open-mobility-foundation-mds.py
+    detected: '2026-10-22'
+  detected_by: sweep-open-mobility-foundation-mds.py
+  first_seen: '2026-10-22'
+generated: '2026-10-22'
+method: searched
+source:
+- https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/providers.csv
+- https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/agencies.csv
+- https://openmobilityfoundation.org
+checked:
+- https://openmobilityfoundation.org
+- https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/agencies.csv
+- https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/providers.csv
